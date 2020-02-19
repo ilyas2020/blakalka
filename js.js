@@ -20,6 +20,35 @@ for(let i = 0; i < 2; i++) {
     }   else { i = 0;}
 }
 
+appData.moneyPerDay = appData.budget/30;
+
+function detectDayBudgest() {
+    alert("Ваш бюджет на день составляет:" + appData.moneyPerDay);
+}
+
+//уровень достатка 
+
+function detectLevel() {
+    if(appData.moneyPerDay < 100) {
+        console.log("Малый уровень достатка");
+    } else if(appData.moneyPerDay > 100 && appData.moneyPerDay < 2000) {
+        console.log("Средний уровень достатка");
+    } else if(appData.moneyPerDay > 2000) {
+        console.log("Вы богатый человек!!!");
+    } else {console.log("Вышла ошибка!")}
+}
+let = optionalExpenses {
+
+};
+
+function chooseOptExpenses() {
+    optionalExpenses.c = prompt("Статья необязательных расходов", "");
+    optionalExpenses.g = prompt("Статья необязательных расходов", "");
+    optionalExpenses.k = prompt("Статья необязательных расходов", "");
+}
+chooseOptExpenses();
+
+
 // let i = 0;
 // while(i < 2) {
 //     i++;
